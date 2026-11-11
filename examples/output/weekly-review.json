@@ -1,0 +1,230 @@
+{
+  "week_start": "2026-10-26",
+  "week_end": "2026-10-30",
+  "capacity": {
+    "working_minutes": 2415,
+    "meeting_minutes": 465,
+    "duty_minutes": 620,
+    "buffer_minutes": 775,
+    "task_capacity_minutes": 555
+  },
+  "done": [
+    {
+      "id": "T-04",
+      "title": "Approve the October leaver requests",
+      "category": "admin",
+      "importance": 3,
+      "due": "2026-10-26",
+      "status": "done",
+      "estimate_minutes": 20,
+      "completed": "2026-10-26",
+      "minutes": 15,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-23",
+      "title": "Review the printing supplier's remote access",
+      "category": "security",
+      "importance": 4,
+      "due": "2026-10-26",
+      "status": "done",
+      "estimate_minutes": 30,
+      "completed": "2026-10-26",
+      "minutes": 20,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-06",
+      "title": "Renew the backup software support contract",
+      "category": "vendor",
+      "importance": 4,
+      "due": "2026-10-23",
+      "status": "done",
+      "estimate_minutes": 30,
+      "completed": "2026-10-27",
+      "minutes": 25,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-15",
+      "title": "Export the hardware inventory for pilot planning",
+      "category": "admin",
+      "importance": 3,
+      "due": "2026-11-06",
+      "status": "done",
+      "estimate_minutes": 45,
+      "completed": "2026-10-27",
+      "minutes": 50,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-11",
+      "title": "Check the warehouse scanner firmware rollout plan",
+      "category": "project",
+      "importance": 4,
+      "due": "2026-10-28",
+      "status": "done",
+      "estimate_minutes": 45,
+      "completed": "2026-10-28",
+      "minutes": 45,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-19",
+      "title": "Investigate the cluster of VPN disconnect tickets",
+      "category": "service",
+      "importance": 3,
+      "due": "2026-10-27",
+      "status": "done",
+      "estimate_minutes": 60,
+      "completed": "2026-10-28",
+      "minutes": 90,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-05",
+      "title": "Complete the insurer's cyber questionnaire",
+      "category": "compliance",
+      "importance": 5,
+      "due": "2026-10-28",
+      "status": "done",
+      "estimate_minutes": 90,
+      "completed": "2026-10-29",
+      "minutes": 120,
+      "minutes_source": "actual"
+    },
+    {
+      "id": "T-12",
+      "title": "Get disaster recovery scope signed off by the operations director",
+      "category": "governance",
+      "importance": 4,
+      "due": "2026-10-30",
+      "status": "done",
+      "estimate_minutes": 30,
+      "completed": "2026-10-29",
+      "minutes": 20,
+      "minutes_source": "actual"
+    }
+  ],
+  "done_minutes": 385,
+  "done_without_completed_date": [],
+  "output_percent_of_task_capacity": 69,
+  "rolled_over": [
+    {
+      "id": "T-09",
+      "title": "Shortlist candidates for the service desk analyst role",
+      "category": "people",
+      "importance": 4,
+      "due": "2026-10-29",
+      "status": "todo",
+      "estimate_minutes": 90
+    },
+    {
+      "id": "T-24",
+      "title": "Run the monthly patch exception review",
+      "category": "security",
+      "importance": 4,
+      "due": "2026-10-29",
+      "status": "todo",
+      "estimate_minutes": 45
+    },
+    {
+      "id": "T-01",
+      "title": "Draft the network refresh business case",
+      "category": "deep",
+      "importance": 5,
+      "due": "2026-10-30",
+      "status": "in_progress",
+      "estimate_minutes": 180
+    },
+    {
+      "id": "T-13",
+      "title": "Test a restore of the finance file share",
+      "category": "service",
+      "importance": 3,
+      "due": "2026-10-30",
+      "status": "in_progress",
+      "estimate_minutes": 60
+    },
+    {
+      "id": "T-22",
+      "title": "Update the asset register for the new laptops",
+      "category": "admin",
+      "importance": 2,
+      "due": "2026-10-30",
+      "status": "todo",
+      "estimate_minutes": 30
+    }
+  ],
+  "overdue": [
+    {
+      "id": "T-07",
+      "title": "Chase the courier label printer replacement",
+      "category": "vendor",
+      "importance": 2,
+      "due": "2026-10-21",
+      "status": "todo",
+      "estimate_minutes": 15,
+      "days_late": 5
+    }
+  ],
+  "waiting_or_blocked": [
+    {
+      "id": "T-25",
+      "title": "Plan the Christmas change freeze dates",
+      "category": "admin",
+      "importance": 3,
+      "due": "2026-11-13",
+      "status": "todo",
+      "estimate_minutes": 30,
+      "waiting_for": [
+        "T-18"
+      ]
+    }
+  ],
+  "due_next_week": [
+    {
+      "id": "T-08",
+      "title": "Agree new service desk SLA targets with operations",
+      "category": "project",
+      "importance": 3,
+      "due": "2026-11-02",
+      "status": "todo",
+      "estimate_minutes": 60
+    },
+    {
+      "id": "T-18",
+      "title": "Prepare the budget forecast narrative for finance",
+      "category": "finance",
+      "importance": 4,
+      "due": "2026-11-04",
+      "status": "todo",
+      "estimate_minutes": 90
+    },
+    {
+      "id": "T-02",
+      "title": "Review the firewall rule clean-up proposal",
+      "category": "deep",
+      "importance": 4,
+      "due": "2026-11-06",
+      "status": "todo",
+      "estimate_minutes": 90
+    },
+    {
+      "id": "T-10",
+      "title": "Write the infrastructure engineer's performance review",
+      "category": "people",
+      "importance": 3,
+      "due": "2026-11-06",
+      "status": "todo",
+      "estimate_minutes": 60
+    }
+  ],
+  "weekday_names": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ]
+}

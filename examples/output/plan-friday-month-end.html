@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Day plan 2026-10-30</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c2329; --muted: #55606a; --line: #cfd6dc; --soft: #f4f6f8;
+  --meeting: #2b6cb0; --duty: #0f766e; --task: #2f855a; --deep: #6b46c1; --buffer: #b7791f;
+  --lunch: #718096; --free: #a0aec0;
+  --alert-bg: #fdecea; --alert-fg: #8a1f17; --warn-bg: #fff4d6; --warn-fg: #6b4300; --info-bg: #e8f1fb; --info-fg: #1e4a7a;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181c; --fg: #e4e9ee; --muted: #9aa6b1; --line: #36404a; --soft: #1d2329;
+    --meeting: #63a4e8; --duty: #4fd1c5; --task: #68d391; --deep: #b794f4; --buffer: #f6ad55;
+    --lunch: #a0aec0; --free: #718096;
+    --alert-bg: #3b1a17; --alert-fg: #ffb4aa; --warn-bg: #3a2c0e; --warn-fg: #f6d58e; --info-bg: #16283b; --info-fg: #a9cdf3;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0 auto; padding: 14mm 12mm; max-width: 210mm; background: var(--bg); color: var(--fg);
+  font: 10pt/1.35 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+h1 { font-size: 17pt; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 10.5pt; margin: 9px 0 3px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.sub { margin: 2px 0 8px; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 6px 0; }
+.stat { background: var(--soft); border: 1px solid var(--line); border-radius: 5px; padding: 4px 7px; }
+.stat b { display: block; font-size: 13pt; line-height: 1.2; }
+.stat span { font-size: 7.5pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.note { border-radius: 5px; padding: 5px 9px; margin: 5px 0; font-size: 9pt; border-left: 4px solid; }
+.note.alert { background: var(--alert-bg); color: var(--alert-fg); border-color: var(--alert-fg); }
+.note.warning { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-fg); }
+.note.info { background: var(--info-bg); color: var(--info-fg); border-color: var(--info-fg); }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--line); padding: 3px 5px; }
+td { padding: 2px 5px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.time { white-space: nowrap; font-variant-numeric: tabular-nums; width: 24mm; }
+td.min { white-space: nowrap; text-align: right; width: 10mm; color: var(--muted); font-variant-numeric: tabular-nums; }
+td.box { width: 6mm; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.timeline td:first-child { border-left: 4px solid var(--free); }
+.timeline tr.meeting td:first-child { border-left-color: var(--meeting); }
+.timeline tr.duty td:first-child { border-left-color: var(--duty); }
+.timeline tr.task td:first-child { border-left-color: var(--task); }
+.timeline tr.deep td:first-child { border-left-color: var(--deep); }
+.timeline tr.buffer td:first-child { border-left-color: var(--buffer); }
+.timeline tr.lunch td:first-child { border-left-color: var(--lunch); }
+.timeline tr.buffer td, .timeline tr.lunch td { background: var(--soft); }
+.timeline tr.free td { color: var(--muted); }
+.tag { display: inline-block; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-left: 5px; color: var(--muted); vertical-align: 1px; }
+.title { font-weight: 600; }
+.why { font-size: 7.5pt; color: var(--muted); margin-top: 1px; }
+input[type=checkbox] { width: 11px; height: 11px; margin: 2px 0 0; }
+.lines { margin-top: 4px; }
+.lines div { border-bottom: 1px solid var(--line); height: 6mm; }
+ul.excluded { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 12px; }
+ul.excluded li { break-inside: avoid; padding: 2px 0; border-bottom: 1px solid var(--line); }
+.small { font-size: 8pt; color: var(--muted); }
+footer { margin-top: 10px; font-size: 7.5pt; color: var(--muted); }
+.flag { font-weight: 700; color: var(--alert-fg); }
+tr, .note, .stat { break-inside: avoid; }
+.page + .page { break-before: page; margin-top: 18px; }
+@page { size: A4; margin: 7mm 8mm; }
+@media print {
+  html, body { background: #fff; }
+  body { max-width: none; padding: 0; font-size: 8.5pt; }
+  h1 { font-size: 15pt; }
+  .stat b { font-size: 11pt; }
+  .why { font-size: 7pt; }
+  td { padding: 1.5px 5px; }
+  .lines div { height: 5mm; }
+  footer { margin-top: 4px; }
+}
+</style>
+</head>
+<body>
+<section class="page">
+<h1>Day plan: Friday 30 October 2026</h1>
+<p class="sub">Priya Calderbeck, IT Manager, Ottermere Fabrications Ltd</p>
+<div class="stats"><div class="stat"><b>435</b><span>Working min (08:30 to 16:30)</span></div><div class="stat"><b>105</b><span>Meetings min</span></div><div class="stat"><b>150</b><span>Duties min</span></div><div class="stat"><b>150</b><span>Buffer min (target 130)</span></div><div class="stat"><b>30</b><span>Tasks planned min</span></div><div class="stat"><b>0</b><span>Free min</span></div></div>
+<table class="timeline">
+<thead><tr><th>Time</th><th>Min</th><th></th><th>Block and reason</th></tr></thead>
+<tbody>
+<tr class="duty"><td class="time">08:30 to 08:45</td><td class="min">15</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Overnight alerts and backup check</span><span class="tag">Duty</span> <span class="small">every working day</span></td></tr>
+<tr class="meeting"><td class="time">08:45 to 09:00</td><td class="min">15</td><td class="box"></td><td><span class="title">IT team stand-up</span><span class="tag">Meeting</span></td></tr>
+<tr class="duty"><td class="time">09:00 to 09:15</td><td class="min">15</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Service desk queue and SLA check</span><span class="tag">Duty</span> <span class="small">every working day</span></td></tr>
+<tr class="buffer"><td class="time">09:15 to 09:30</td><td class="min">15</td><td class="box"></td><td><span class="title">Interruptions and incidents</span><span class="tag">Buffer</span> <span class="small">A gap of 15 minutes, shorter than the 30 minute minimum block, counted as buffer.</span></td></tr>
+<tr class="duty"><td class="time">09:30 to 10:30</td><td class="min">60</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Month-end KPI pack</span><span class="tag">Duty</span> <span class="small">monthly, on the last working day</span></td></tr>
+<tr class="deep"><td class="time">10:30 to 11:00</td><td class="min">30</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Draft the network refresh business case</span> <span class="small">deep</span><span class="tag">Task (deep)</span><div class="why">Score 94: importance 5 gives 50, due today gives 40, age gives 4. Deep-work task, placed in the deep-work window (09:15 to 11:30).</div></td></tr>
+<tr class="meeting"><td class="time">11:00 to 11:30</td><td class="min">30</td><td class="box"></td><td><span class="title">Operations review</span><span class="tag">Meeting</span></td></tr>
+<tr class="buffer"><td class="time">11:30 to 12:30</td><td class="min">60</td><td class="box"></td><td><span class="title">Interruptions and incidents</span><span class="tag">Buffer</span> <span class="small">30% of 435 working minutes is 130.5, rounded to 130 minutes</span></td></tr>
+<tr class="lunch"><td class="time">12:30 to 13:15</td><td class="min">45</td><td class="box"></td><td><span class="title">Lunch</span><span class="tag">Lunch</span></td></tr>
+<tr class="duty"><td class="time">13:15 to 13:25</td><td class="min">10</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Security alerts and unusual sign-ins</span><span class="tag">Duty</span> <span class="small">every working day</span></td></tr>
+<tr class="duty"><td class="time">13:25 to 13:35</td><td class="min">10</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Change calendar check</span><span class="tag">Duty</span> <span class="small">every working day</span></td></tr>
+<tr class="buffer"><td class="time">13:35 to 14:00</td><td class="min">25</td><td class="box"></td><td><span class="title">Interruptions and incidents</span><span class="tag">Buffer</span> <span class="small">A gap of 25 minutes, shorter than the 30 minute minimum block, counted as buffer.</span></td></tr>
+<tr class="meeting"><td class="time">14:00 to 15:00</td><td class="min">60</td><td class="box"></td><td><span class="title">Auditor walkthrough: IT general controls</span><span class="tag">Meeting</span></td></tr>
+<tr class="buffer"><td class="time">15:00 to 15:30</td><td class="min">30</td><td class="box"></td><td><span class="title">Interruptions and incidents</span><span class="tag">Buffer</span> <span class="small">30% of 435 working minutes is 130.5, rounded to 130 minutes</span></td></tr>
+<tr class="duty"><td class="time">15:30 to 16:00</td><td class="min">30</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">Weekly review and next week&#x27;s plan</span><span class="tag">Duty</span> <span class="small">weekly on Friday</span></td></tr>
+<tr class="buffer"><td class="time">16:00 to 16:20</td><td class="min">20</td><td class="box"></td><td><span class="title">Interruptions and incidents</span><span class="tag">Buffer</span> <span class="small">A gap of 20 minutes, shorter than the 30 minute minimum block, counted as buffer.</span></td></tr>
+<tr class="duty"><td class="time">16:20 to 16:30</td><td class="min">10</td><td class="box"><input type="checkbox" aria-label="Done"></td><td><span class="title">End-of-day shutdown</span><span class="tag">Duty</span> <span class="small">every working day</span><div class="why">Nothing free at or after 17:20, so it is placed at the latest time before it that fits, 16:20.</div></td></tr>
+</tbody></table>
+<h2>Not today</h2>
+<table><thead><tr><th>Task</th><th>Need</th><th>Placed</th><th>Next</th><th>Note</th></tr></thead><tbody>
+<tr><td><span class="title">Renew the backup software support contract</span> <span class="small">T-06</span></td><td class="num">30</td><td class="num">0</td><td class="time">Mon 2026-11-02</td><td><div class="why">Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again.</div></td></tr>
+<tr><td><span class="title">Complete the insurer&#x27;s cyber questionnaire</span> <span class="small">T-05</span></td><td class="num">90</td><td class="num">0</td><td class="time">Mon 2026-11-02</td><td><div class="why">Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again.</div></td></tr>
+<tr><td><span class="title">Draft the network refresh business case</span> <span class="small">T-01</span></td><td class="num">180</td><td class="num">30</td><td class="time">Mon 2026-11-02</td><td><div class="why">Only 30 of 180 minutes fit. The other 150 minutes found no time after meetings, duties, the buffer and higher-scoring tasks. Due today but not placed: renegotiate the date or delegate it today.</div></td></tr>
+</tbody></table>
+<p class="small">Unless a note says otherwise: no time left after meetings, duties, the buffer and higher-scoring tasks.</p>
+<p class="small">17 more with lower scores (titles are in the Markdown and JSON output): T-23 (30 min), T-11 (45 min), T-24 (45 min), T-09 (90 min), T-07 (15 min), T-04 (20 min), T-19 (60 min), T-13 (60 min), T-22 (30 min), T-08 (60 min), T-18 (90 min), T-02 (90 min), T-15 (45 min), T-10 (60 min), T-21 (75 min), T-20 (45 min), T-16 (60 min).</p>
+<h2>Excluded from planning</h2>
+<ul class="excluded">
+<li><span class="title">Write the disaster recovery test plan for the order system</span> <span class="small">T-03</span><div class="why">Blocked by T-12 (waiting).</div></li>
+<li><span class="title">Get disaster recovery scope signed off by the operations director</span> <span class="small">T-12</span><div class="why">Status is waiting: it depends on someone else, so there is nothing to schedule yet.</div></li>
+<li><span class="title">Plan the Windows 11 upgrade pilot</span> <span class="small">T-14</span><div class="why">Blocked by T-15 (todo).</div></li>
+<li><span class="title">Draft the guest Wi-Fi acceptable use note</span> <span class="small">T-17</span><div class="why">Not startable until 2026-11-02.</div></li>
+<li><span class="title">Plan the Christmas change freeze dates</span> <span class="small">T-25</span><div class="why">Blocked by T-18 (todo).</div></li>
+</ul>
+<h2>Notes</h2>
+<div class="lines"><div></div></div>
+<footer>Plan built from local files by day-planner. Every placement has a reason; the rules are in docs/how-the-planner-works.md.</footer>
+</section>
+</body>
+</html>

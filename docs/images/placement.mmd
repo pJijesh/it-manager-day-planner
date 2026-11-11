@@ -1,0 +1,16 @@
+flowchart TD
+    S["Free time after meetings,<br/>lunch and duties"] --> G{"Gap shorter than the<br/>minimum block?"}
+    G -->|"Yes"| SL["Counts as buffer"]
+    G -->|"No"| U["Usable free time"]
+    U --> R["Reserve the buffer outside the<br/>deep window, in blocks of about<br/>60 min spread through the day"]
+    R --> F["Remaining free time"]
+    F --> Q["Tasks in score order"]
+    Q --> K{"Deep task?"}
+    K -->|"Yes"| DW["Deep window first, then elsewhere"]
+    K -->|"No"| OW["Outside the deep window first"]
+    DW --> X{"Fits as one block?"}
+    OW --> X
+    X -->|"Yes"| ONE["One block, earliest gap that holds it"]
+    X -->|"No"| SP["Split into pieces that are each<br/>at least the minimum block"]
+    SP --> LEFT["Leftover goes to Not today<br/>with a reason and a next day"]
+    ONE --> DONE["Placed"]

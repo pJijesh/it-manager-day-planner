@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "it-manager-day-planner"
+dynamic = ["version"]
+description = "A practical operating rhythm, printable templates and a small tested tool that builds a realistic time-blocked day and week plan for IT managers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jijesh Puliyappottammal" }]
+keywords = ["it-management", "planning", "time-blocking", "scheduling", "operating-rhythm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/pJijesh/it-manager-day-planner"
+
+[project.scripts]
+day-planner = "day_planner.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "day_planner.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["day_planner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

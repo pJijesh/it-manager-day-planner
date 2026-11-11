@@ -1,0 +1,331 @@
+{
+  "week_start": "2026-10-26",
+  "week_end": "2026-10-30",
+  "summary": {
+    "working_minutes": 2415,
+    "meeting_minutes": 465,
+    "duty_minutes": 620,
+    "buffer_minutes": 775,
+    "task_capacity_minutes": 555,
+    "task_minutes_planned": 540,
+    "tasks_not_scheduled": 13,
+    "overloaded_days": [],
+    "flagged_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ]
+  },
+  "days": [
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "working_day": true,
+      "working_minutes": 495,
+      "meeting_minutes": 75,
+      "duty_minutes": 90,
+      "buffer_minutes": 150,
+      "task_minutes": 180,
+      "free_minutes": 0,
+      "task_capacity_minutes": 180,
+      "fixed_percent": 33,
+      "flags": [
+        "1 DUE OR OVERDUE NOT PLACED"
+      ],
+      "tasks": [
+        {
+          "id": "T-01",
+          "title": "Draft the network refresh business case",
+          "minutes": 135,
+          "part": ""
+        },
+        {
+          "id": "T-06",
+          "title": "Renew the backup software support contract",
+          "minutes": 30,
+          "part": ""
+        },
+        {
+          "id": "T-07",
+          "title": "Chase the courier label printer replacement",
+          "minutes": 15,
+          "part": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "working_day": true,
+      "working_minutes": 495,
+      "meeting_minutes": 90,
+      "duty_minutes": 80,
+      "buffer_minutes": 160,
+      "task_minutes": 165,
+      "free_minutes": 0,
+      "task_capacity_minutes": 165,
+      "fixed_percent": 34,
+      "flags": [
+        "2 DUE OR OVERDUE NOT PLACED"
+      ],
+      "tasks": [
+        {
+          "id": "T-01",
+          "title": "Draft the network refresh business case",
+          "minutes": 45,
+          "part": ""
+        },
+        {
+          "id": "T-02",
+          "title": "Review the firewall rule clean-up proposal",
+          "minutes": 90,
+          "part": ""
+        },
+        {
+          "id": "T-05",
+          "title": "Complete the insurer's cyber questionnaire",
+          "minutes": 30,
+          "part": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "working_day": true,
+      "working_minutes": 495,
+      "meeting_minutes": 105,
+      "duty_minutes": 150,
+      "buffer_minutes": 165,
+      "task_minutes": 75,
+      "free_minutes": 0,
+      "task_capacity_minutes": 75,
+      "fixed_percent": 52,
+      "flags": [
+        "3 DUE OR OVERDUE NOT PLACED"
+      ],
+      "tasks": [
+        {
+          "id": "T-21",
+          "title": "Write the incident handover note for the on-call rota",
+          "minutes": 45,
+          "part": "part 1 of 2"
+        },
+        {
+          "id": "T-21",
+          "title": "Write the incident handover note for the on-call rota",
+          "minutes": 30,
+          "part": "part 2 of 2"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "working_day": true,
+      "working_minutes": 495,
+      "meeting_minutes": 90,
+      "duty_minutes": 150,
+      "buffer_minutes": 150,
+      "task_minutes": 90,
+      "free_minutes": 15,
+      "task_capacity_minutes": 105,
+      "fixed_percent": 48,
+      "flags": [
+        "4 DUE OR OVERDUE NOT PLACED"
+      ],
+      "tasks": [
+        {
+          "id": "T-05",
+          "title": "Complete the insurer's cyber questionnaire",
+          "minutes": 60,
+          "part": ""
+        },
+        {
+          "id": "T-23",
+          "title": "Review the printing supplier's remote access",
+          "minutes": 30,
+          "part": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "working_day": true,
+      "working_minutes": 435,
+      "meeting_minutes": 105,
+      "duty_minutes": 150,
+      "buffer_minutes": 150,
+      "task_minutes": 30,
+      "free_minutes": 0,
+      "task_capacity_minutes": 30,
+      "fixed_percent": 59,
+      "flags": [
+        "TIGHT",
+        "7 DUE OR OVERDUE NOT PLACED"
+      ],
+      "tasks": [
+        {
+          "id": "T-09",
+          "title": "Shortlist candidates for the service desk analyst role",
+          "minutes": 30,
+          "part": ""
+        }
+      ]
+    }
+  ],
+  "not_scheduled_this_week": [
+    {
+      "id": "T-04",
+      "title": "Approve the October leaver requests",
+      "minutes_left": 20,
+      "minutes_needed": 20,
+      "reason": "20 of 20 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-26",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-08",
+      "title": "Agree new service desk SLA targets with operations",
+      "minutes_left": 60,
+      "minutes_needed": 60,
+      "reason": "60 of 60 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-11-02",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-09",
+      "title": "Shortlist candidates for the service desk analyst role",
+      "minutes_left": 60,
+      "minutes_needed": 90,
+      "reason": "60 of 90 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-29",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-10",
+      "title": "Write the infrastructure engineer's performance review",
+      "minutes_left": 60,
+      "minutes_needed": 60,
+      "reason": "60 of 60 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-11-06",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-11",
+      "title": "Check the warehouse scanner firmware rollout plan",
+      "minutes_left": 45,
+      "minutes_needed": 45,
+      "reason": "45 of 45 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-28",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-13",
+      "title": "Test a restore of the finance file share",
+      "minutes_left": 60,
+      "minutes_needed": 60,
+      "reason": "60 of 60 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-30",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-15",
+      "title": "Export the hardware inventory for pilot planning",
+      "minutes_left": 45,
+      "minutes_needed": 45,
+      "reason": "45 of 45 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-11-06",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-16",
+      "title": "Review and reduce unused software licences",
+      "minutes_left": 60,
+      "minutes_needed": 60,
+      "reason": "60 of 60 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-11-10",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-18",
+      "title": "Prepare the budget forecast narrative for finance",
+      "minutes_left": 90,
+      "minutes_needed": 90,
+      "reason": "90 of 90 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-11-04",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-19",
+      "title": "Investigate the cluster of VPN disconnect tickets",
+      "minutes_left": 60,
+      "minutes_needed": 60,
+      "reason": "60 of 60 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-27",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-20",
+      "title": "Tidy the shared password manager folders",
+      "minutes_left": 45,
+      "minutes_needed": 45,
+      "reason": "45 of 45 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": null,
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-22",
+      "title": "Update the asset register for the new laptops",
+      "minutes_left": 30,
+      "minutes_needed": 30,
+      "reason": "30 of 30 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-30",
+      "suggested_day": "2026-11-02"
+    },
+    {
+      "id": "T-24",
+      "title": "Run the monthly patch exception review",
+      "minutes_left": 45,
+      "minutes_needed": 45,
+      "reason": "45 of 45 minutes could not be placed in the week: capacity was used up by meetings, duties, the buffer and higher-scoring tasks.",
+      "due": "2026-10-29",
+      "suggested_day": "2026-11-02"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "T-03",
+      "title": "Write the disaster recovery test plan for the order system",
+      "reason": "Blocked by T-12 (waiting).",
+      "available_from": null
+    },
+    {
+      "id": "T-12",
+      "title": "Get disaster recovery scope signed off by the operations director",
+      "reason": "Status is waiting: it depends on someone else, so there is nothing to schedule yet.",
+      "available_from": null
+    },
+    {
+      "id": "T-14",
+      "title": "Plan the Windows 11 upgrade pilot",
+      "reason": "Blocked by T-15 (todo).",
+      "available_from": null
+    },
+    {
+      "id": "T-17",
+      "title": "Draft the guest Wi-Fi acceptable use note",
+      "reason": "Not startable until 2026-11-02.",
+      "available_from": "2026-11-02"
+    },
+    {
+      "id": "T-25",
+      "title": "Plan the Christmas change freeze dates",
+      "reason": "Blocked by T-18 (todo).",
+      "available_from": null
+    }
+  ]
+}

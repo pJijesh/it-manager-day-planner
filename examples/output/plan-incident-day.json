@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-27",
+  "weekday": "Tuesday",
+  "working_day": true,
+  "name": "Priya Calderbeck, IT Manager",
+  "organisation": "Ottermere Fabrications Ltd",
+  "working_hours": {
+    "start": "08:30",
+    "end": "17:30"
+  },
+  "deep_work_window": {
+    "start": "09:15",
+    "end": "11:30"
+  },
+  "min_block_minutes": 30,
+  "capacity": {
+    "working_minutes": 495,
+    "lunch_minutes": 45,
+    "meeting_minutes": 90,
+    "duty_minutes": 80,
+    "duty_minutes_required": 80,
+    "fixed_commitment_minutes": 170,
+    "buffer_percent": 50.0,
+    "buffer_target_minutes": 250,
+    "buffer_minutes": 250,
+    "task_minutes_planned": 65,
+    "free_minutes": 10,
+    "task_capacity_minutes": 75
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "message": "The interruption buffer is set to 50% for this plan; the profile says 30%."
+    }
+  ],
+  "blocks": [
+    {
+      "start": "08:30",
+      "end": "08:45",
+      "minutes": 15,
+      "kind": "duty",
+      "title": "Overnight alerts and backup check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 08:30."
+    },
+    {
+      "start": "08:45",
+      "end": "09:00",
+      "minutes": 15,
+      "kind": "meeting",
+      "title": "IT team stand-up",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "09:00",
+      "end": "09:15",
+      "minutes": 15,
+      "kind": "duty",
+      "title": "Service desk queue and SLA check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 09:00."
+    },
+    {
+      "start": "09:15",
+      "end": "09:50",
+      "minutes": 35,
+      "kind": "task",
+      "title": "Draft the network refresh business case",
+      "part": "",
+      "task_id": "T-01",
+      "category": "deep",
+      "deep": true,
+      "reason": "Score 79: importance 5 gives 50, due in 3 days gives 25, age gives 4. Deep-work task, placed in the deep-work window (09:15 to 11:30)."
+    },
+    {
+      "start": "09:50",
+      "end": "11:30",
+      "minutes": 100,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected buffer: 50% of 495 working minutes is 247.5, rounded to 250 minutes; spread across all free time because there is too little free time outside the deep-work window."
+    },
+    {
+      "start": "11:30",
+      "end": "12:00",
+      "minutes": 30,
+      "kind": "meeting",
+      "title": "1:1 with service desk lead",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "12:00",
+      "end": "12:30",
+      "minutes": 30,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected buffer: 50% of 495 working minutes is 247.5, rounded to 250 minutes; spread across all free time because there is too little free time outside the deep-work window."
+    },
+    {
+      "start": "12:30",
+      "end": "13:15",
+      "minutes": 45,
+      "kind": "lunch",
+      "title": "Lunch",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected break from the profile."
+    },
+    {
+      "start": "13:15",
+      "end": "13:25",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "Security alerts and unusual sign-ins",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 13:15."
+    },
+    {
+      "start": "13:25",
+      "end": "13:35",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "Change calendar check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 13:25."
+    },
+    {
+      "start": "13:35",
+      "end": "13:55",
+      "minutes": 20,
+      "kind": "duty",
+      "title": "Budget and spend check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, weekly on Tuesday. Preferred start 13:30 was not free, so it is placed at 13:35."
+    },
+    {
+      "start": "13:55",
+      "end": "14:00",
+      "minutes": 5,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "A gap of 5 minutes is shorter than the 30 minute minimum block, so it is counted as buffer."
+    },
+    {
+      "start": "14:00",
+      "end": "14:45",
+      "minutes": 45,
+      "kind": "meeting",
+      "title": "Change advisory board",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "14:45",
+      "end": "15:15",
+      "minutes": 30,
+      "kind": "task",
+      "title": "Renew the backup software support contract",
+      "part": "",
+      "task_id": "T-06",
+      "category": "vendor",
+      "deep": false,
+      "reason": "Score 91: importance 4 gives 40, overdue by 4 days gives 48, age gives 3. Placed outside the deep-work window, which is kept for deep tasks."
+    },
+    {
+      "start": "15:15",
+      "end": "15:25",
+      "minutes": 10,
+      "kind": "free",
+      "title": "Free, unplanned",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Left over: no remaining task fits this gap."
+    },
+    {
+      "start": "15:25",
+      "end": "17:20",
+      "minutes": 115,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected buffer: 50% of 495 working minutes is 247.5, rounded to 250 minutes; spread across all free time because there is too little free time outside the deep-work window."
+    },
+    {
+      "start": "17:20",
+      "end": "17:30",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "End-of-day shutdown",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 17:20."
+    }
+  ],
+  "not_today": [
+    {
+      "id": "T-05",
+      "title": "Complete the insurer's cyber questionnaire",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 87,
+      "reason": "The largest free gap left is 10 minutes. It needs 90, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-23",
+      "title": "Review the printing supplier's remote access",
+      "minutes_needed": 30,
+      "minutes_placed": 0,
+      "score": 84,
+      "reason": "The largest free gap left is 10 minutes. It needs 30, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-01",
+      "title": "Draft the network refresh business case",
+      "minutes_needed": 180,
+      "minutes_placed": 35,
+      "score": 79,
+      "reason": "Only 35 of 180 minutes fit. The other 145 minutes found no time after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-11",
+      "title": "Check the warehouse scanner firmware rollout plan",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 77,
+      "reason": "The largest free gap left is 10 minutes. It needs 45, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-07",
+      "title": "Chase the courier label printer replacement",
+      "minutes_needed": 15,
+      "minutes_placed": 0,
+      "score": 73,
+      "reason": "The largest free gap left is 10 minutes. It needs 15, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-04",
+      "title": "Approve the October leaver requests",
+      "minutes_needed": 20,
+      "minutes_placed": 0,
+      "score": 72,
+      "reason": "The largest free gap left is 10 minutes. It needs 20, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-19",
+      "title": "Investigate the cluster of VPN disconnect tickets",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 71,
+      "reason": "The largest free gap left is 10 minutes. It needs 60, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": "Due today but not placed: renegotiate the date or delegate it today."
+    },
+    {
+      "id": "T-24",
+      "title": "Run the monthly patch exception review",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 71,
+      "reason": "The largest free gap left is 10 minutes. It needs 45, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-09",
+      "title": "Shortlist candidates for the service desk analyst role",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 71,
+      "reason": "The largest free gap left is 10 minutes. It needs 90, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-13",
+      "title": "Test a restore of the finance file share",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 57,
+      "reason": "The largest free gap left is 10 minutes. It needs 60, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-22",
+      "title": "Update the asset register for the new laptops",
+      "minutes_needed": 30,
+      "minutes_placed": 0,
+      "score": 45,
+      "reason": "The largest free gap left is 10 minutes. It needs 30, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-02",
+      "title": "Review the firewall rule clean-up proposal",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 43,
+      "reason": "The largest free gap left is 10 minutes. It needs 90, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-18",
+      "title": "Prepare the budget forecast narrative for finance",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 42,
+      "reason": "The largest free gap left is 10 minutes. It needs 90, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-08",
+      "title": "Agree new service desk SLA targets with operations",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 41,
+      "reason": "The largest free gap left is 10 minutes. It needs 60, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-15",
+      "title": "Export the hardware inventory for pilot planning",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 31,
+      "reason": "The largest free gap left is 10 minutes. It needs 45, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-10",
+      "title": "Write the infrastructure engineer's performance review",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 31,
+      "reason": "The largest free gap left is 10 minutes. It needs 60, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-21",
+      "title": "Write the incident handover note for the on-call rota",
+      "minutes_needed": 75,
+      "minutes_placed": 0,
+      "score": 31,
+      "reason": "The largest free gap left is 10 minutes. It needs 75, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-20",
+      "title": "Tidy the shared password manager folders",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 30,
+      "reason": "The largest free gap left is 10 minutes. It needs 45, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    },
+    {
+      "id": "T-16",
+      "title": "Review and reduce unused software licences",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 25,
+      "reason": "The largest free gap left is 10 minutes. It needs 60, and blocks are never shorter than 30 minutes.",
+      "suggested_day": "2026-10-28",
+      "note": ""
+    }
+  ],
+  "excluded": [
+    {
+      "id": "T-03",
+      "title": "Write the disaster recovery test plan for the order system",
+      "reason": "Blocked by T-12 (waiting).",
+      "available_from": null
+    },
+    {
+      "id": "T-12",
+      "title": "Get disaster recovery scope signed off by the operations director",
+      "reason": "Status is waiting: it depends on someone else, so there is nothing to schedule yet.",
+      "available_from": null
+    },
+    {
+      "id": "T-14",
+      "title": "Plan the Windows 11 upgrade pilot",
+      "reason": "Blocked by T-15 (todo).",
+      "available_from": null
+    },
+    {
+      "id": "T-17",
+      "title": "Draft the guest Wi-Fi acceptable use note",
+      "reason": "Not startable until 2026-11-02.",
+      "available_from": "2026-11-02"
+    },
+    {
+      "id": "T-25",
+      "title": "Plan the Christmas change freeze dates",
+      "reason": "Blocked by T-18 (todo).",
+      "available_from": null
+    }
+  ],
+  "ignored_done_or_cancelled_tasks": 1
+}

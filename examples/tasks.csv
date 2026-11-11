@@ -1,0 +1,27 @@
+id,title,category,estimate_minutes,due,importance,status,blocked_by,earliest_start,created
+T-01,Draft the network refresh business case,deep,180,2026-10-30,5,in_progress,,,2026-09-28
+T-02,Review the firewall rule clean-up proposal,deep,90,2026-11-06,4,todo,,,2026-10-05
+T-03,Write the disaster recovery test plan for the order system,deep,150,2026-11-13,4,todo,T-12,,2026-10-01
+T-04,Approve the October leaver requests,admin,20,2026-10-26,3,todo,,,2026-10-22
+T-05,Complete the insurer's cyber questionnaire,compliance,90,2026-10-28,5,todo,,,2026-10-12
+T-06,Renew the backup software support contract,vendor,30,2026-10-23,4,todo,,,2026-10-01
+T-07,Chase the courier label printer replacement,vendor,15,2026-10-21,2,todo,,,2026-10-15
+T-08,Agree new service desk SLA targets with operations,project,60,2026-11-02,3,todo,,,2026-10-14
+T-09,Shortlist candidates for the service desk analyst role,people,90,2026-10-29,4,todo,,,2026-10-19
+T-10,Write the infrastructure engineer's performance review,people,60,2026-11-06,3,todo,,,2026-10-20
+T-11,Check the warehouse scanner firmware rollout plan,project,45,2026-10-28,4,in_progress,,,2026-10-12
+T-12,Get disaster recovery scope signed off by the operations director,governance,30,2026-10-30,4,waiting,,,2026-10-08
+T-13,Test a restore of the finance file share,service,60,2026-10-30,3,todo,,,2026-10-09
+T-14,Plan the Windows 11 upgrade pilot,project,120,2026-11-20,3,todo,T-15,,2026-10-19
+T-15,Export the hardware inventory for pilot planning,admin,45,2026-11-06,3,todo,,,2026-10-19
+T-16,Review and reduce unused software licences,finance,60,2026-11-10,2,todo,,,2026-09-21
+T-17,Draft the guest Wi-Fi acceptable use note,deep,45,2026-11-12,2,todo,,2026-11-02,2026-10-22
+T-18,Prepare the budget forecast narrative for finance,finance,90,2026-11-04,4,todo,,,2026-10-13
+T-19,Investigate the cluster of VPN disconnect tickets,service,60,2026-10-27,3,in_progress,,,2026-10-16
+T-20,Tidy the shared password manager folders,security,45,,2,todo,,,2026-08-17
+T-21,Write the incident handover note for the on-call rota,deep,75,2026-11-09,3,todo,,,2026-10-14
+T-22,Update the asset register for the new laptops,admin,30,2026-10-30,2,todo,,,2026-10-21
+T-23,Review the printing supplier's remote access,security,30,2026-10-26,4,todo,,,2026-10-12
+T-24,Run the monthly patch exception review,security,45,2026-10-29,4,todo,,,2026-10-19
+T-25,Plan the Christmas change freeze dates,admin,30,2026-11-13,3,todo,T-18,,2026-10-23
+T-26,Renew the public domain names,admin,20,2026-10-23,5,done,,,2026-10-02

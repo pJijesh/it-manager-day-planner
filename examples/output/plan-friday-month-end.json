@@ -1,0 +1,472 @@
+{
+  "date": "2026-10-30",
+  "weekday": "Friday",
+  "working_day": true,
+  "name": "Priya Calderbeck, IT Manager",
+  "organisation": "Ottermere Fabrications Ltd",
+  "working_hours": {
+    "start": "08:30",
+    "end": "16:30"
+  },
+  "deep_work_window": {
+    "start": "09:15",
+    "end": "11:30"
+  },
+  "min_block_minutes": 30,
+  "capacity": {
+    "working_minutes": 435,
+    "lunch_minutes": 45,
+    "meeting_minutes": 105,
+    "duty_minutes": 150,
+    "duty_minutes_required": 150,
+    "fixed_commitment_minutes": 255,
+    "buffer_percent": 30,
+    "buffer_target_minutes": 130,
+    "buffer_minutes": 150,
+    "task_minutes_planned": 30,
+    "free_minutes": 0,
+    "task_capacity_minutes": 30
+  },
+  "warnings": [],
+  "blocks": [
+    {
+      "start": "08:30",
+      "end": "08:45",
+      "minutes": 15,
+      "kind": "duty",
+      "title": "Overnight alerts and backup check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 08:30."
+    },
+    {
+      "start": "08:45",
+      "end": "09:00",
+      "minutes": 15,
+      "kind": "meeting",
+      "title": "IT team stand-up",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "09:00",
+      "end": "09:15",
+      "minutes": 15,
+      "kind": "duty",
+      "title": "Service desk queue and SLA check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 09:00."
+    },
+    {
+      "start": "09:15",
+      "end": "09:30",
+      "minutes": 15,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "A gap of 15 minutes is shorter than the 30 minute minimum block, so it is counted as buffer."
+    },
+    {
+      "start": "09:30",
+      "end": "10:30",
+      "minutes": 60,
+      "kind": "duty",
+      "title": "Month-end KPI pack",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, monthly, on the last working day. Placed at its preferred start, 09:30."
+    },
+    {
+      "start": "10:30",
+      "end": "11:00",
+      "minutes": 30,
+      "kind": "task",
+      "title": "Draft the network refresh business case",
+      "part": "",
+      "task_id": "T-01",
+      "category": "deep",
+      "deep": true,
+      "reason": "Score 94: importance 5 gives 50, due today gives 40, age gives 4. Deep-work task, placed in the deep-work window (09:15 to 11:30)."
+    },
+    {
+      "start": "11:00",
+      "end": "11:30",
+      "minutes": 30,
+      "kind": "meeting",
+      "title": "Operations review",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "11:30",
+      "end": "12:30",
+      "minutes": 60,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected buffer: 30% of 435 working minutes is 130.5, rounded to 130 minutes; kept outside the deep-work window."
+    },
+    {
+      "start": "12:30",
+      "end": "13:15",
+      "minutes": 45,
+      "kind": "lunch",
+      "title": "Lunch",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected break from the profile."
+    },
+    {
+      "start": "13:15",
+      "end": "13:25",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "Security alerts and unusual sign-ins",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 13:15."
+    },
+    {
+      "start": "13:25",
+      "end": "13:35",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "Change calendar check",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Placed at its preferred start, 13:25."
+    },
+    {
+      "start": "13:35",
+      "end": "14:00",
+      "minutes": 25,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "A gap of 25 minutes is shorter than the 30 minute minimum block, so it is counted as buffer."
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "minutes": 60,
+      "kind": "meeting",
+      "title": "Auditor walkthrough: IT general controls",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Fixed meeting from the profile."
+    },
+    {
+      "start": "15:00",
+      "end": "15:30",
+      "minutes": 30,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "Protected buffer: 30% of 435 working minutes is 130.5, rounded to 130 minutes; kept outside the deep-work window."
+    },
+    {
+      "start": "15:30",
+      "end": "16:00",
+      "minutes": 30,
+      "kind": "duty",
+      "title": "Weekly review and next week's plan",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, weekly on Friday. Placed at its preferred start, 15:30."
+    },
+    {
+      "start": "16:00",
+      "end": "16:20",
+      "minutes": 20,
+      "kind": "buffer",
+      "title": "Interruptions and incidents",
+      "part": "",
+      "task_id": null,
+      "category": null,
+      "deep": false,
+      "reason": "A gap of 20 minutes is shorter than the 30 minute minimum block, so it is counted as buffer."
+    },
+    {
+      "start": "16:20",
+      "end": "16:30",
+      "minutes": 10,
+      "kind": "duty",
+      "title": "End-of-day shutdown",
+      "part": "",
+      "task_id": null,
+      "category": "duty",
+      "deep": false,
+      "reason": "Recurring duty, every working day. Nothing free at or after 17:20, so it is placed at the latest time before it that fits, 16:20."
+    }
+  ],
+  "not_today": [
+    {
+      "id": "T-06",
+      "title": "Renew the backup software support contract",
+      "minutes_needed": 30,
+      "minutes_placed": 0,
+      "score": 98,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-05",
+      "title": "Complete the insurer's cyber questionnaire",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 96,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-01",
+      "title": "Draft the network refresh business case",
+      "minutes_needed": 180,
+      "minutes_placed": 30,
+      "score": 94,
+      "reason": "Only 30 of 180 minutes fit. The other 150 minutes found no time after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Due today but not placed: renegotiate the date or delegate it today."
+    },
+    {
+      "id": "T-23",
+      "title": "Review the printing supplier's remote access",
+      "minutes_needed": 30,
+      "minutes_placed": 0,
+      "score": 90,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-11",
+      "title": "Check the warehouse scanner firmware rollout plan",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 86,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-24",
+      "title": "Run the monthly patch exception review",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 83,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-09",
+      "title": "Shortlist candidates for the service desk analyst role",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 83,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-07",
+      "title": "Chase the courier label printer replacement",
+      "minutes_needed": 15,
+      "minutes_placed": 0,
+      "score": 80,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-04",
+      "title": "Approve the October leaver requests",
+      "minutes_needed": 20,
+      "minutes_placed": 0,
+      "score": 79,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-19",
+      "title": "Investigate the cluster of VPN disconnect tickets",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 78,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Already overdue: renegotiate the date, delegate it or drop it, rather than letting it slide again."
+    },
+    {
+      "id": "T-13",
+      "title": "Test a restore of the finance file share",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 73,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Due today but not placed: renegotiate the date or delegate it today."
+    },
+    {
+      "id": "T-22",
+      "title": "Update the asset register for the new laptops",
+      "minutes_needed": 30,
+      "minutes_placed": 0,
+      "score": 61,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": "Due today but not placed: renegotiate the date or delegate it today."
+    },
+    {
+      "id": "T-08",
+      "title": "Agree new service desk SLA targets with operations",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 57,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-18",
+      "title": "Prepare the budget forecast narrative for finance",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 57,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-02",
+      "title": "Review the firewall rule clean-up proposal",
+      "minutes_needed": 90,
+      "minutes_placed": 0,
+      "score": 48,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-15",
+      "title": "Export the hardware inventory for pilot planning",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 36,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-10",
+      "title": "Write the infrastructure engineer's performance review",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 36,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-21",
+      "title": "Write the incident handover note for the on-call rota",
+      "minutes_needed": 75,
+      "minutes_placed": 0,
+      "score": 32,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-20",
+      "title": "Tidy the shared password manager folders",
+      "minutes_needed": 45,
+      "minutes_placed": 0,
+      "score": 30,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    },
+    {
+      "id": "T-16",
+      "title": "Review and reduce unused software licences",
+      "minutes_needed": 60,
+      "minutes_placed": 0,
+      "score": 25,
+      "reason": "No time left after meetings, duties, the buffer and higher-scoring tasks.",
+      "suggested_day": "2026-11-02",
+      "note": ""
+    }
+  ],
+  "excluded": [
+    {
+      "id": "T-03",
+      "title": "Write the disaster recovery test plan for the order system",
+      "reason": "Blocked by T-12 (waiting).",
+      "available_from": null
+    },
+    {
+      "id": "T-12",
+      "title": "Get disaster recovery scope signed off by the operations director",
+      "reason": "Status is waiting: it depends on someone else, so there is nothing to schedule yet.",
+      "available_from": null
+    },
+    {
+      "id": "T-14",
+      "title": "Plan the Windows 11 upgrade pilot",
+      "reason": "Blocked by T-15 (todo).",
+      "available_from": null
+    },
+    {
+      "id": "T-17",
+      "title": "Draft the guest Wi-Fi acceptable use note",
+      "reason": "Not startable until 2026-11-02.",
+      "available_from": "2026-11-02"
+    },
+    {
+      "id": "T-25",
+      "title": "Plan the Christmas change freeze dates",
+      "reason": "Blocked by T-18 (todo).",
+      "available_from": null
+    }
+  ],
+  "ignored_done_or_cancelled_tasks": 1
+}

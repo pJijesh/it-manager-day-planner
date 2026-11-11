@@ -1,0 +1,322 @@
+{
+  "title": "IT manager operating rhythm",
+  "version": "1.0",
+  "note": "These are practitioner suggestions to adapt to your organisation, its size, its risks and its contracts. They are not standards. No frequency or duration here is stated or required by any law, regulation or standard. Where a contract, regulator or certification scheme applies to you, follow that source and the frequency it gives.",
+  "cadences": [
+    {
+      "cadence": "daily",
+      "label": "Daily",
+      "intro": "A short routine that finds problems while they are small. About 80 minutes in total, much of it in the first hour of the day.",
+      "items": [
+        {
+          "id": "D01",
+          "title": "Overnight alerts and backup results",
+          "why": "A failed backup or a quiet alert channel is easy to miss. Read the job results instead of assuming they ran.",
+          "typical_minutes": 15,
+          "suggested_when": "start of day"
+        },
+        {
+          "id": "D02",
+          "title": "Service desk queue and SLA breaches",
+          "why": "Look at the oldest tickets, anything breached or about to breach, and who is stuck. Ageing tickets are where users lose trust.",
+          "typical_minutes": 15,
+          "suggested_when": "start of day"
+        },
+        {
+          "id": "D03",
+          "title": "Security alerts and unusual sign-ins",
+          "why": "Check the security console or alert digest for anything that needs a decision, such as a new admin account or repeated failed sign-ins.",
+          "typical_minutes": 10,
+          "suggested_when": "start of day"
+        },
+        {
+          "id": "D04",
+          "title": "Change calendar for today and tomorrow",
+          "why": "Know what is changing, who owns it and whether it collides with a busy business period. Stop or move a change that is not ready.",
+          "typical_minutes": 10,
+          "suggested_when": "before mid-morning"
+        },
+        {
+          "id": "D05",
+          "title": "Expiring certificates, licences and domains",
+          "why": "A glance at the list of items expiring in the next 30 days. Expiry outages are avoidable and embarrassing.",
+          "typical_minutes": 5,
+          "suggested_when": "start of day"
+        },
+        {
+          "id": "D06",
+          "title": "People check-ins",
+          "why": "A few short conversations or messages: who is blocked, who is overloaded, who is out. Fix small blockers the same day.",
+          "typical_minutes": 10,
+          "suggested_when": "after stand-up"
+        },
+        {
+          "id": "D07",
+          "title": "Set the top three for the day",
+          "why": "Pick the three results that would make today a good day, and say what will not happen. Use the day plan to check they fit.",
+          "typical_minutes": 5,
+          "suggested_when": "start of day"
+        },
+        {
+          "id": "D08",
+          "title": "End-of-day shutdown",
+          "why": "Capture loose ends, update the task list, note handover points and set tomorrow's first task. See templates/end-of-day-shutdown.md.",
+          "typical_minutes": 10,
+          "suggested_when": "end of day"
+        }
+      ]
+    },
+    {
+      "cadence": "weekly",
+      "label": "Weekly",
+      "intro": "Where priorities, people and spend are kept in line. Roughly four to six hours a week, mostly meetings you already have.",
+      "items": [
+        {
+          "id": "W01",
+          "title": "IT team meeting",
+          "why": "Share priorities, incidents and changes, and agree who owns what. Keep it short and decision-led.",
+          "typical_minutes": 30,
+          "suggested_when": "early in the week"
+        },
+        {
+          "id": "W02",
+          "title": "One-to-ones with direct reports (per person)",
+          "why": "Regular, protected time for each person: workload, blockers, development and how they are. Cancelling them teaches the team what matters least.",
+          "typical_minutes": 30,
+          "suggested_when": "spread across the week"
+        },
+        {
+          "id": "W03",
+          "title": "Vendor actions and chasing",
+          "why": "Review open supplier tickets, quotes and deliveries. Chase the ones that are late and record the answer.",
+          "typical_minutes": 30,
+          "suggested_when": "mid-week"
+        },
+        {
+          "id": "W04",
+          "title": "Risk register review",
+          "why": "Check new risks, changed ratings and overdue actions. Close or escalate, do not just re-read.",
+          "typical_minutes": 30,
+          "suggested_when": "mid-week"
+        },
+        {
+          "id": "W05",
+          "title": "Budget and spend check",
+          "why": "Compare committed and actual spend with the budget line by line for anything unusual, new subscriptions and unapproved purchases.",
+          "typical_minutes": 20,
+          "suggested_when": "mid-week"
+        },
+        {
+          "id": "W06",
+          "title": "Patch and vulnerability status",
+          "why": "How many devices and servers are behind, what is overdue, and what exceptions are open. Decide what is pushed this week.",
+          "typical_minutes": 30,
+          "suggested_when": "mid-week"
+        },
+        {
+          "id": "W07",
+          "title": "Projects and change review",
+          "why": "Status of live projects, upcoming changes and anything that needs a decision or more people.",
+          "typical_minutes": 30,
+          "suggested_when": "mid-week"
+        },
+        {
+          "id": "W08",
+          "title": "Backlog tidy",
+          "why": "Close stale tasks, split large ones, re-rate importance and make sure blocked items have an owner. See docs/time-blocking-for-it-managers.md.",
+          "typical_minutes": 30,
+          "suggested_when": "end of week"
+        },
+        {
+          "id": "W09",
+          "title": "Weekly review and next week's plan",
+          "why": "Look at what was done, what rolled over and what is overdue, then plan next week. See templates/weekly-review.md.",
+          "typical_minutes": 30,
+          "suggested_when": "end of week"
+        }
+      ]
+    },
+    {
+      "cadence": "monthly",
+      "label": "Monthly",
+      "intro": "Evidence, reporting and checks that something still works. Roughly eight hours a month.",
+      "items": [
+        {
+          "id": "M01",
+          "title": "KPI pack",
+          "why": "Collect the handful of measures you track (for example availability, ticket volumes, SLA performance, patching and spend) and note what changed and why.",
+          "typical_minutes": 90,
+          "suggested_when": "last week of the month"
+        },
+        {
+          "id": "M02",
+          "title": "Board or leadership report",
+          "why": "A one to two page update: what happened, what is at risk, what you need decided. See templates/monthly-leadership-update.md.",
+          "typical_minutes": 90,
+          "suggested_when": "last working days of the month"
+        },
+        {
+          "id": "M03",
+          "title": "Access review sample",
+          "why": "Pick a sample of accounts and permissions, especially administrators, and confirm each is still needed. Record what you removed.",
+          "typical_minutes": 45,
+          "suggested_when": "mid-month"
+        },
+        {
+          "id": "M04",
+          "title": "Licence and subscription review",
+          "why": "Match paid licences and subscriptions to people and use. Reclaim or cancel what is idle.",
+          "typical_minutes": 45,
+          "suggested_when": "mid-month"
+        },
+        {
+          "id": "M05",
+          "title": "Backup restore or DR test",
+          "why": "Restore a real item from backup, or run one step of the recovery plan, and write down how long it took and what broke. A backup that has not been restored is a hope.",
+          "typical_minutes": 60,
+          "suggested_when": "mid-month"
+        },
+        {
+          "id": "M06",
+          "title": "Budget forecast against actuals",
+          "why": "Update the year-end forecast and explain variances to the finance partner before they ask.",
+          "typical_minutes": 60,
+          "suggested_when": "after month end"
+        },
+        {
+          "id": "M07",
+          "title": "Joiners, movers and leavers reconciliation",
+          "why": "Compare the HR list of leavers and movers with accounts, devices and licences. Close the gaps.",
+          "typical_minutes": 30,
+          "suggested_when": "after month end"
+        },
+        {
+          "id": "M08",
+          "title": "Incident and problem review",
+          "why": "Look for repeat incidents and near misses. Pick one cause to remove.",
+          "typical_minutes": 45,
+          "suggested_when": "after month end"
+        }
+      ]
+    },
+    {
+      "cadence": "quarterly",
+      "label": "Quarterly",
+      "intro": "Bigger conversations that need preparation. Roughly ten hours a quarter, more if you have several key suppliers to review.",
+      "items": [
+        {
+          "id": "Q01",
+          "title": "Supplier reviews (key suppliers)",
+          "why": "Review service, cost, risks and relationship with each key supplier, and agree actions. Do this before renewal dates, not after.",
+          "typical_minutes": 60,
+          "suggested_when": "before renewal windows"
+        },
+        {
+          "id": "Q02",
+          "title": "Policy review",
+          "why": "Review a rotating share of IT policies so each one is read at least once a year. Retire the ones nobody follows.",
+          "typical_minutes": 60,
+          "suggested_when": "first month of the quarter"
+        },
+        {
+          "id": "Q03",
+          "title": "Tabletop exercise",
+          "why": "Walk the team through a realistic incident on paper: who does what, who is told and what decisions are needed. Record the gaps and fix them.",
+          "typical_minutes": 120,
+          "suggested_when": "once a quarter"
+        },
+        {
+          "id": "Q04",
+          "title": "Roadmap and priorities review",
+          "why": "Check progress against the plan, drop what no longer matters and confirm the next quarter's priorities with leadership.",
+          "typical_minutes": 90,
+          "suggested_when": "start of the quarter"
+        },
+        {
+          "id": "Q05",
+          "title": "Full risk register review",
+          "why": "Rework the whole register with owners: ratings, treatments, accepted risks and new risks.",
+          "typical_minutes": 60,
+          "suggested_when": "mid-quarter"
+        },
+        {
+          "id": "Q06",
+          "title": "Privileged access review",
+          "why": "Review all administrator and service accounts and their owners, not just a sample.",
+          "typical_minutes": 90,
+          "suggested_when": "mid-quarter"
+        },
+        {
+          "id": "Q07",
+          "title": "Lifecycle and capacity review",
+          "why": "List hardware and software nearing end of support, and storage, network and licence headroom. Feed the budget.",
+          "typical_minutes": 60,
+          "suggested_when": "end of the quarter"
+        },
+        {
+          "id": "Q08",
+          "title": "Team development check",
+          "why": "Review objectives, training, workload and succession for each role.",
+          "typical_minutes": 60,
+          "suggested_when": "end of the quarter"
+        }
+      ]
+    },
+    {
+      "cadence": "annual",
+      "label": "Annual",
+      "intro": "Large pieces of work that need to be put in the diary months ahead.",
+      "items": [
+        {
+          "id": "A01",
+          "title": "Budget cycle",
+          "why": "Prepare the next year's operating and project budget with evidence from the lifecycle review and the roadmap. Total effort, spread over several weeks.",
+          "typical_minutes": 480,
+          "suggested_when": "ahead of your finance deadline"
+        },
+        {
+          "id": "A02",
+          "title": "Contract renewals calendar",
+          "why": "Rebuild the list of every supplier contract with end date, notice period and owner, and set reminders well before each notice date.",
+          "typical_minutes": 120,
+          "suggested_when": "once a year, then keep current"
+        },
+        {
+          "id": "A03",
+          "title": "Full disaster recovery test",
+          "why": "Run a complete recovery of a priority service in a safe way, time it and compare it with what the business expects. Total effort including preparation.",
+          "typical_minutes": 240,
+          "suggested_when": "once a year"
+        },
+        {
+          "id": "A04",
+          "title": "Certification and accreditation renewals",
+          "why": "List every certificate, accreditation, training record and assurance report that expires, with the lead time to renew it.",
+          "typical_minutes": 60,
+          "suggested_when": "once a year, then keep current"
+        },
+        {
+          "id": "A05",
+          "title": "Strategy and roadmap refresh",
+          "why": "Revisit the multi-year direction with leadership. Check it still fits where the business is going.",
+          "typical_minutes": 240,
+          "suggested_when": "once a year"
+        },
+        {
+          "id": "A06",
+          "title": "Third-party assurance requests",
+          "why": "Ask critical suppliers for current evidence of how they protect your data and keep service running, and note what is missing.",
+          "typical_minutes": 90,
+          "suggested_when": "once a year"
+        },
+        {
+          "id": "A07",
+          "title": "Team training and succession plan",
+          "why": "Agree development plans, cover for key people and the skills you need next year.",
+          "typical_minutes": 90,
+          "suggested_when": "once a year"
+        }
+      ]
+    }
+  ]
+}

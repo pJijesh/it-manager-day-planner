@@ -1,0 +1,25 @@
+flowchart LR
+    subgraph IN["Inputs (local files)"]
+        P["profile.json<br/>hours, lunch, buffer %,<br/>deep window, meetings,<br/>recurring duties, holidays"]
+        T["tasks.csv<br/>estimate, due, importance,<br/>status, blocked_by"]
+    end
+    subgraph SCHED["Scheduler (deterministic)"]
+        A["1. Working day?<br/>hours minus lunch"] --> B["2. Place meetings<br/>and due duties"]
+        B --> C["3. Reserve the buffer<br/>as explicit blocks"]
+        C --> D["4. Score tasks<br/>drop blocked or not yet startable"]
+        D --> E["5. Fit tasks in score order<br/>deep work in the deep window,<br/>splits never below the minimum"]
+    end
+    subgraph OUT["Outputs"]
+        M["Markdown"]
+        H["Printable A4 HTML"]
+        J["JSON"]
+        N["Not today and Excluded,<br/>each with a reason"]
+        W["Warnings when fixed<br/>commitments exceed capacity"]
+    end
+    P --> A
+    T --> D
+    E --> M
+    E --> H
+    E --> J
+    E --> N
+    B --> W

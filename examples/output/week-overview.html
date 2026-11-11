@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Week plan 2026-10-26</title>
+<style>
+:root {
+  --bg: #ffffff; --fg: #1c2329; --muted: #55606a; --line: #cfd6dc; --soft: #f4f6f8;
+  --meeting: #2b6cb0; --duty: #0f766e; --task: #2f855a; --deep: #6b46c1; --buffer: #b7791f;
+  --lunch: #718096; --free: #a0aec0;
+  --alert-bg: #fdecea; --alert-fg: #8a1f17; --warn-bg: #fff4d6; --warn-fg: #6b4300; --info-bg: #e8f1fb; --info-fg: #1e4a7a;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181c; --fg: #e4e9ee; --muted: #9aa6b1; --line: #36404a; --soft: #1d2329;
+    --meeting: #63a4e8; --duty: #4fd1c5; --task: #68d391; --deep: #b794f4; --buffer: #f6ad55;
+    --lunch: #a0aec0; --free: #718096;
+    --alert-bg: #3b1a17; --alert-fg: #ffb4aa; --warn-bg: #3a2c0e; --warn-fg: #f6d58e; --info-bg: #16283b; --info-fg: #a9cdf3;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0 auto; padding: 14mm 12mm; max-width: 210mm; background: var(--bg); color: var(--fg);
+  font: 10pt/1.35 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+h1 { font-size: 17pt; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 10.5pt; margin: 9px 0 3px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.sub { margin: 2px 0 8px; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 6px 0; }
+.stat { background: var(--soft); border: 1px solid var(--line); border-radius: 5px; padding: 4px 7px; }
+.stat b { display: block; font-size: 13pt; line-height: 1.2; }
+.stat span { font-size: 7.5pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.note { border-radius: 5px; padding: 5px 9px; margin: 5px 0; font-size: 9pt; border-left: 4px solid; }
+.note.alert { background: var(--alert-bg); color: var(--alert-fg); border-color: var(--alert-fg); }
+.note.warning { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-fg); }
+.note.info { background: var(--info-bg); color: var(--info-fg); border-color: var(--info-fg); }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--line); padding: 3px 5px; }
+td { padding: 2px 5px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.time { white-space: nowrap; font-variant-numeric: tabular-nums; width: 24mm; }
+td.min { white-space: nowrap; text-align: right; width: 10mm; color: var(--muted); font-variant-numeric: tabular-nums; }
+td.box { width: 6mm; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.timeline td:first-child { border-left: 4px solid var(--free); }
+.timeline tr.meeting td:first-child { border-left-color: var(--meeting); }
+.timeline tr.duty td:first-child { border-left-color: var(--duty); }
+.timeline tr.task td:first-child { border-left-color: var(--task); }
+.timeline tr.deep td:first-child { border-left-color: var(--deep); }
+.timeline tr.buffer td:first-child { border-left-color: var(--buffer); }
+.timeline tr.lunch td:first-child { border-left-color: var(--lunch); }
+.timeline tr.buffer td, .timeline tr.lunch td { background: var(--soft); }
+.timeline tr.free td { color: var(--muted); }
+.tag { display: inline-block; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-left: 5px; color: var(--muted); vertical-align: 1px; }
+.title { font-weight: 600; }
+.why { font-size: 7.5pt; color: var(--muted); margin-top: 1px; }
+input[type=checkbox] { width: 11px; height: 11px; margin: 2px 0 0; }
+.lines { margin-top: 4px; }
+.lines div { border-bottom: 1px solid var(--line); height: 6mm; }
+ul.excluded { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 12px; }
+ul.excluded li { break-inside: avoid; padding: 2px 0; border-bottom: 1px solid var(--line); }
+.small { font-size: 8pt; color: var(--muted); }
+footer { margin-top: 10px; font-size: 7.5pt; color: var(--muted); }
+.flag { font-weight: 700; color: var(--alert-fg); }
+tr, .note, .stat { break-inside: avoid; }
+.page + .page { break-before: page; margin-top: 18px; }
+@page { size: A4; margin: 7mm 8mm; }
+@media print {
+  html, body { background: #fff; }
+  body { max-width: none; padding: 0; font-size: 8.5pt; }
+  h1 { font-size: 15pt; }
+  .stat b { font-size: 11pt; }
+  .why { font-size: 7pt; }
+  td { padding: 1.5px 5px; }
+  .lines div { height: 5mm; }
+  footer { margin-top: 4px; }
+}
+</style>
+</head>
+<body>
+<section class="page">
+<h1>Week plan: Monday 26 October 2026 to Friday 30 October 2026</h1>
+<div class="stats"><div class="stat"><b>2415</b><span>Working min</span></div><div class="stat"><b>465</b><span>Meetings min</span></div><div class="stat"><b>620</b><span>Duties min</span></div><div class="stat"><b>775</b><span>Buffer min</span></div><div class="stat"><b>555</b><span>Task capacity min</span></div><div class="stat"><b>540</b><span>Tasks planned min</span></div></div>
+<div class="note warning"><strong>Warning:</strong> check Monday, Tuesday, Wednesday, Thursday, Friday. See the Flags column.</div>
+<table><thead><tr><th>Day</th><th>Work</th><th>Meet</th><th>Duty</th><th>Buffer</th><th>Tasks</th><th>Free</th><th>Fixed %</th><th>Flags</th></tr></thead><tbody>
+<tr><td style="width:42mm"><span class="title">Monday</span> <span class="small" style="white-space:nowrap">2026-10-26</span></td><td class="num">495</td><td class="num">75</td><td class="num">90</td><td class="num">150</td><td class="num">180</td><td class="num">0</td><td class="num">33</td><td class="flag">1 DUE OR OVERDUE NOT PLACED</td></tr>
+<tr><td style="width:42mm"><span class="title">Tuesday</span> <span class="small" style="white-space:nowrap">2026-10-27</span></td><td class="num">495</td><td class="num">90</td><td class="num">80</td><td class="num">160</td><td class="num">165</td><td class="num">0</td><td class="num">34</td><td class="flag">2 DUE OR OVERDUE NOT PLACED</td></tr>
+<tr><td style="width:42mm"><span class="title">Wednesday</span> <span class="small" style="white-space:nowrap">2026-10-28</span></td><td class="num">495</td><td class="num">105</td><td class="num">150</td><td class="num">165</td><td class="num">75</td><td class="num">0</td><td class="num">52</td><td class="flag">3 DUE OR OVERDUE NOT PLACED</td></tr>
+<tr><td style="width:42mm"><span class="title">Thursday</span> <span class="small" style="white-space:nowrap">2026-10-29</span></td><td class="num">495</td><td class="num">90</td><td class="num">150</td><td class="num">150</td><td class="num">90</td><td class="num">15</td><td class="num">48</td><td class="flag">4 DUE OR OVERDUE NOT PLACED</td></tr>
+<tr><td style="width:42mm"><span class="title">Friday</span> <span class="small" style="white-space:nowrap">2026-10-30</span></td><td class="num">435</td><td class="num">105</td><td class="num">150</td><td class="num">150</td><td class="num">30</td><td class="num">0</td><td class="num">59</td><td class="flag">TIGHT; 7 DUE OR OVERDUE NOT PLACED</td></tr>
+</tbody></table>
+<p class="small">Minutes, except Fixed %, which is meetings plus recurring duties as a share of working time.</p>
+<h2>Tasks by day</h2>
+<table><tbody>
+<tr><td style="width:22mm"><span class="title">Monday</span></td><td>Draft the network refresh business case (135 min); Renew the backup software support contract (30 min); Chase the courier label printer replacement (15 min)</td></tr>
+<tr><td style="width:22mm"><span class="title">Tuesday</span></td><td>Draft the network refresh business case (45 min); Review the firewall rule clean-up proposal (90 min); Complete the insurer&#x27;s cyber questionnaire (30 min)</td></tr>
+<tr><td style="width:22mm"><span class="title">Wednesday</span></td><td>Write the incident handover note for the on-call rota (45 min); Write the incident handover note for the on-call rota (30 min)</td></tr>
+<tr><td style="width:22mm"><span class="title">Thursday</span></td><td>Complete the insurer&#x27;s cyber questionnaire (60 min); Review the printing supplier&#x27;s remote access (30 min)</td></tr>
+<tr><td style="width:22mm"><span class="title">Friday</span></td><td>Shortlist candidates for the service desk analyst role (30 min)</td></tr>
+</tbody></table>
+<h2>Not scheduled this week</h2>
+<ul class="excluded">
+<li><span class="title">Approve the October leaver requests</span> <span class="small">T-04</span><div class="why">20 of 20 min left, due 2026-10-26</div></li>
+<li><span class="title">Agree new service desk SLA targets with operations</span> <span class="small">T-08</span><div class="why">60 of 60 min left, due 2026-11-02</div></li>
+<li><span class="title">Shortlist candidates for the service desk analyst role</span> <span class="small">T-09</span><div class="why">60 of 90 min left, due 2026-10-29</div></li>
+<li><span class="title">Write the infrastructure engineer&#x27;s performance review</span> <span class="small">T-10</span><div class="why">60 of 60 min left, due 2026-11-06</div></li>
+<li><span class="title">Check the warehouse scanner firmware rollout plan</span> <span class="small">T-11</span><div class="why">45 of 45 min left, due 2026-10-28</div></li>
+<li><span class="title">Test a restore of the finance file share</span> <span class="small">T-13</span><div class="why">60 of 60 min left, due 2026-10-30</div></li>
+<li><span class="title">Export the hardware inventory for pilot planning</span> <span class="small">T-15</span><div class="why">45 of 45 min left, due 2026-11-06</div></li>
+<li><span class="title">Review and reduce unused software licences</span> <span class="small">T-16</span><div class="why">60 of 60 min left, due 2026-11-10</div></li>
+<li><span class="title">Prepare the budget forecast narrative for finance</span> <span class="small">T-18</span><div class="why">90 of 90 min left, due 2026-11-04</div></li>
+<li><span class="title">Investigate the cluster of VPN disconnect tickets</span> <span class="small">T-19</span><div class="why">60 of 60 min left, due 2026-10-27</div></li>
+<li><span class="title">Tidy the shared password manager folders</span> <span class="small">T-20</span><div class="why">45 of 45 min left</div></li>
+<li><span class="title">Update the asset register for the new laptops</span> <span class="small">T-22</span><div class="why">30 of 30 min left, due 2026-10-30</div></li>
+<li><span class="title">Run the monthly patch exception review</span> <span class="small">T-24</span><div class="why">45 of 45 min left, due 2026-10-29</div></li>
+</ul>
+<p class="small">These found no time after meetings, duties, the buffer and higher-scoring tasks.</p>
+<h2>Excluded from planning</h2>
+<ul class="excluded">
+<li><span class="title">Write the disaster recovery test plan for the order system</span> <span class="small">T-03</span><div class="why">Blocked by T-12 (waiting).</div></li>
+<li><span class="title">Get disaster recovery scope signed off by the operations director</span> <span class="small">T-12</span><div class="why">Status is waiting: it depends on someone else, so there is nothing to schedule yet.</div></li>
+<li><span class="title">Plan the Windows 11 upgrade pilot</span> <span class="small">T-14</span><div class="why">Blocked by T-15 (todo).</div></li>
+<li><span class="title">Draft the guest Wi-Fi acceptable use note</span> <span class="small">T-17</span><div class="why">Not startable until 2026-11-02.</div></li>
+<li><span class="title">Plan the Christmas change freeze dates</span> <span class="small">T-25</span><div class="why">Blocked by T-18 (todo).</div></li>
+</ul>
+<footer>Plan built from local files by day-planner. Every placement has a reason; the rules are in docs/how-the-planner-works.md.</footer>
+</section>
+</body>
+</html>

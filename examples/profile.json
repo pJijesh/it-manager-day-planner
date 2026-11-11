@@ -1,0 +1,52 @@
+{
+  "_comment": "Fictional example. Ottermere Fabrications Ltd and Priya Calderbeck are invented. Bank holidays are the England and Wales dates for 2026 from the GOV.UK list.",
+  "name": "Priya Calderbeck, IT Manager",
+  "organisation": "Ottermere Fabrications Ltd",
+  "working_hours": {
+    "mon": ["08:30", "17:30"],
+    "tue": ["08:30", "17:30"],
+    "wed": ["08:30", "17:30"],
+    "thu": ["08:30", "17:30"],
+    "fri": ["08:30", "16:30"],
+    "sat": null,
+    "sun": null
+  },
+  "lunch": {"start": "12:30", "end": "13:15"},
+  "buffer_percent": 30,
+  "min_block_minutes": 30,
+  "buffer_block_minutes": 60,
+  "deep_work_window": {"start": "09:15", "end": "11:30"},
+  "bank_holidays": [
+    "2026-01-01", "2026-04-03", "2026-04-06", "2026-05-04", "2026-05-25",
+    "2026-08-31", "2026-12-25", "2026-12-28"
+  ],
+  "fixed_meetings": [
+    {"title": "IT team stand-up", "weekdays": ["mon", "tue", "wed", "thu", "fri"], "start": "08:45", "end": "09:00"},
+    {"title": "Leadership team meeting", "weekday": "mon", "start": "14:00", "end": "15:00"},
+    {"title": "1:1 with service desk lead", "weekday": "tue", "start": "11:30", "end": "12:00"},
+    {"title": "Change advisory board", "weekday": "tue", "start": "14:00", "end": "14:45"},
+    {"title": "Steering group: warehouse scanner rollout", "weekday": "wed", "start": "10:00", "end": "11:00"},
+    {"title": "1:1 with infrastructure engineer", "weekday": "wed", "start": "15:00", "end": "15:30"},
+    {"title": "Budget check-in with finance director", "weekday": "thu", "start": "11:00", "end": "11:30"},
+    {"title": "IT team meeting", "weekday": "thu", "start": "14:00", "end": "14:45"},
+    {"title": "Operations review", "weekday": "fri", "start": "11:00", "end": "11:30"},
+    {"title": "Auditor walkthrough: IT general controls", "date": "2026-10-30", "start": "14:00", "end": "15:00"}
+  ],
+  "recurring_duties": [
+    {"id": "alerts", "title": "Overnight alerts and backup check", "cadence": "daily", "minutes": 15, "preferred_start": "08:30"},
+    {"id": "queue", "title": "Service desk queue and SLA check", "cadence": "daily", "minutes": 15, "preferred_start": "09:00"},
+    {"id": "security", "title": "Security alerts and unusual sign-ins", "cadence": "daily", "minutes": 10, "preferred_start": "13:15"},
+    {"id": "change", "title": "Change calendar check", "cadence": "daily", "minutes": 10, "preferred_start": "13:25"},
+    {"id": "shutdown", "title": "End-of-day shutdown", "cadence": "daily", "minutes": 10, "preferred_start": "17:20"},
+    {"id": "vendors", "title": "Vendor actions and chasing", "cadence": "weekly", "weekday": "mon", "minutes": 30, "preferred_start": "15:15"},
+    {"id": "budget", "title": "Budget and spend check", "cadence": "weekly", "weekday": "tue", "minutes": 20, "preferred_start": "13:30"},
+    {"id": "patching", "title": "Patch and vulnerability status", "cadence": "weekly", "weekday": "wed", "minutes": 30, "preferred_start": "13:30"},
+    {"id": "risks", "title": "Risk register review", "cadence": "weekly", "weekday": "thu", "minutes": 30, "preferred_start": "15:00"},
+    {"id": "weekly-review", "title": "Weekly review and next week's plan", "cadence": "weekly", "weekday": "fri", "minutes": 30, "preferred_start": "15:30"},
+    {"id": "kpi", "title": "Month-end KPI pack", "cadence": "monthly_last_working_day", "minutes": 60, "preferred_start": "09:30"},
+    {"id": "leadership-update", "title": "Leadership update draft", "cadence": "monthly_day", "day": 28, "minutes": 60, "preferred_start": "13:30"},
+    {"id": "access-review", "title": "Access review sample", "cadence": "monthly_nth_weekday", "nth": 2, "weekday": "wed", "minutes": 45, "preferred_start": "13:30"},
+    {"id": "supplier-review", "title": "Key supplier review", "cadence": "quarterly", "months": [1, 4, 7, 10], "day": 29, "minutes": 60, "preferred_start": "15:30"},
+    {"id": "budget-cycle", "title": "Budget cycle kick-off", "cadence": "annual", "month": 11, "day": 3, "minutes": 90}
+  ]
+}
