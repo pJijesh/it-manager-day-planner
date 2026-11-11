@@ -1,5 +1,7 @@
 # it-manager-day-planner
 
+![it-manager-day-planner: project banner](docs/images/banner.png)
+
 [![Tests](https://github.com/pJijesh/it-manager-day-planner/actions/workflows/test.yml/badge.svg)](https://github.com/pJijesh/it-manager-day-planner/actions/workflows/test.yml) [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 
 **Problem:** an IT manager's day is booked solid with meetings and routine checks before any real work starts, and then an incident takes the rest, so the plan is wrong by mid-morning, the important work slips quietly and nobody can see what was traded away.
