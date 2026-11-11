@@ -147,6 +147,6 @@ Planned, not promised. Order and timing change with other work.
 
 ## Licence
 
-[MIT](LICENSE), 2026 Jijesh Puliyappottammal. See [CONTRIBUTING](CONTRIBUTING.md) for how to suggest changes.
+[MIT](LICENSE), 2026 Puliyappottammal Jijesh. See [CONTRIBUTING](CONTRIBUTING.md) for how to suggest changes.
 
-Built by [Jijesh Puliyappottammal](https://www.linkedin.com/in/pjijesh), an IT manager. [GitHub](https://github.com/pJijesh)
+Built by [Puliyappottammal Jijesh](https://www.linkedin.com/in/pjijesh), an IT manager. [GitHub](https://github.com/pJijesh)

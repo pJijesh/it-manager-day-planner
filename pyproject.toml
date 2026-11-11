@@ -9,7 +9,7 @@ description = "A practical operating rhythm, printable templates and a small tes
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Jijesh Puliyappottammal" }]
+authors = [{ name = "Puliyappottammal Jijesh" }]
 keywords = ["it-management", "planning", "time-blocking", "scheduling", "operating-rhythm"]
 classifiers = [
     "Programming Language :: Python :: 3",

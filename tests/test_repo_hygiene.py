@@ -66,7 +66,7 @@ def test_required_files_exist():
 
 def test_licence_year_and_holder():
     text = (ROOT / "LICENSE").read_text(encoding="utf-8")
-    assert "MIT License" in text and "Copyright (c) 2026 Jijesh Puliyappottammal" in text
+    assert "MIT License" in text and "Copyright (c) 2026 Puliyappottammal Jijesh" in text
 
 
 def test_readme_follows_the_house_structure():
